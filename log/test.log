@@ -176,3 +176,89 @@ Completed 200 OK in 46ms (Views: 28.8ms | ActiveRecord: 0.4ms)
   [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
   Rendered practices/show.html.erb (2.2ms)
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PracticesController#new as HTML
+  Rendered practices/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "practices"[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/practices" for 127.0.0.1 at 2015-01-28 12:04:33 -0500
+Processing by PracticesController#index as HTML
+  [1m[35mPractice Load (0.3ms)[0m  SELECT "practices".* FROM "practices"
+  Rendered practices/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 47ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "practices" ("game", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["game", "MyString"], ["score", 1], ["created_at", "2015-01-28 17:04:34.017144"], ["updated_at", "2015-01-28 17:04:34.017144"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered practices/_form.html.erb (47.8ms)
+  Rendered practices/edit.html.erb (73.7ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "practices" ("game", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["game", "Game"], ["score", 1], ["created_at", "2015-01-28 17:04:34.125269"], ["updated_at", "2015-01-28 17:04:34.125269"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "practices" ("game", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["game", "Game"], ["score", 1], ["created_at", "2015-01-28 17:04:34.128776"], ["updated_at", "2015-01-28 17:04:34.128776"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered practices/index.html.erb (3.4ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered practices/_form.html.erb (4.5ms)
+  Rendered practices/new.html.erb (25.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "practices" ("game", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["game", "Game"], ["score", 1], ["created_at", "2015-01-28 17:04:34.200383"], ["updated_at", "2015-01-28 17:04:34.200383"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered practices/show.html.erb (1.9ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
